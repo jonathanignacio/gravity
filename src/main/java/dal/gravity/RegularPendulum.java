@@ -8,6 +8,7 @@ public class RegularPendulum extends AbstractPendulum {
     private double dissipation;
     private double lastTheta, lastVel, lastAccel;
 
+
     /**
      * Creates a new Pendulum instance 
      */
