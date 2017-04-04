@@ -13,7 +13,7 @@ public class RegularPendulum extends AbstractPendulum {
      * Creates a new Pendulum instance 
      */
     public RegularPendulum (double inLength, double inMass, double inTheta0, 
-		     double inDelta, double inDiss, double inG) {
+		     double inDelta, double inDiss, GravityModel inG) {
 	super (inLength, inMass, inTheta0, inG);
 	delta=inDelta;
 	dissipation = inDiss;
@@ -23,7 +23,7 @@ public class RegularPendulum extends AbstractPendulum {
     }
 
     public RegularPendulum (double inLength, double inMass, double inTheta0, 
-		     double inDelta, double inG) {
+		     double inDelta, GravityModel inG) {
 	this (inLength, inMass, inTheta0, inDelta, 0, inG);
     }
 
